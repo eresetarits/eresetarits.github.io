@@ -1086,7 +1086,7 @@ section {
 --------------------------------------------------------------*/
 
 /* Three columns side by side */
-.column {
+#members .column {
   float: left;
   width: 33.3%;
   margin-bottom: 16px;
@@ -1095,34 +1095,34 @@ section {
 
 /* Display the columns below each other instead of side by side on small screens */
 @media screen and (max-width: 650px) {
-  .column {
+  #members .column {
     width: 100%;
     display: block;
   }
 }
 
 /* Add some shadows to create a card effect */
-.card {
+#members .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Some left and right padding inside the container */
-.container {
+#members .container {
   padding: 0 16px;
 }
 
 /* Clear floats */
-.container::after, .row::after {
+#members .container::after, .row::after {
   content: "";
   clear: both;
   display: table;
 }
 
-.title {
+#members .title {
   color: grey;
 }
 
-.button {
+#members .button {
   border: none;
   outline: 0;
   display: inline-block;
@@ -1134,6 +1134,6 @@ section {
   width: 100%;
 }
 
-.button:hover {
+#members .button:hover {
   background-color: #555;
 }
